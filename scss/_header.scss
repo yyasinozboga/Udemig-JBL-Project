@@ -1,0 +1,28 @@
+.header {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  background-color: $bgColor;
+  width: 100%;
+  @include dflex(start, center);
+
+  .nav {
+    @include dflex(space-between, center);
+    padding: 0 30px;
+    margin: 0;
+
+    &-list {
+      @include dflex(center, center);
+      gap: 40px;
+    }
+
+    &-link.active {
+      color: $mainColor;
+    }
+
+    &-link:hover {
+      color: $mainColor;
+    }
+  }
+}

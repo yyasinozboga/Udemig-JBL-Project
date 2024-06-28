@@ -1,0 +1,47 @@
+.res {
+  &-menu-btn {
+    display: none;
+    background-color: transparent;
+    font-size: 2.7rem;
+    color: $textColor;
+    position: absolute;
+    right: 30px;
+  }
+
+  &-menu {
+    display: none;
+    position: absolute;
+    top: -450px;
+    left: 0;
+    width: 100%;
+    background-color: $bgColor;
+    transition: $mainTransition;
+
+    &-item {
+      padding: 30px;
+      pointer-events: none;
+      transition: $mainTransition;
+
+      &.active {
+        background-color: $mainColor;
+        pointer-events: auto;
+      }
+
+      &:hover {
+        background-color: $mainColor;
+      }
+    }
+
+    &-link {
+      font-size: 2rem;
+    }
+
+    &.active {
+      top: 70px;
+
+      .res-menu-item {
+        pointer-events: auto;
+      }
+    }
+  }
+}

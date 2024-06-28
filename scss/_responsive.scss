@@ -1,0 +1,241 @@
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .content {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 200px;
+    font-size: 28px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .res {
+    &-menu-btn {
+      display: block;
+    }
+
+    &-menu {
+      display: block;
+    }
+  }
+
+  .home {
+    &-left {
+      display: none;
+    }
+
+    &-item {
+      font-size: 280px;
+    }
+
+    .tooltip {
+      top: 0;
+      right: -5%;
+    }
+
+    .tooltip-info {
+      font-size: 25px;
+    }
+
+    .tooltip img {
+      width: 100px;
+    }
+  }
+
+  .about {
+    @include dgrid(1fr, center, start);
+  }
+
+  .favorites {
+    .row {
+      @include dgrid(1fr 1fr, center, start);
+    }
+  }
+
+  .models {
+    &-img {
+      width: 90%;
+    }
+
+    .tooltip {
+      &:nth-of-type(2) {
+        top: 10%;
+        right: -24%;
+      }
+
+      &:nth-of-type(3) {
+        top: 29%;
+        left: 33%;
+      }
+
+      &:nth-of-type(4) {
+        top: 65%;
+        left: 21%;
+      }
+
+      &:nth-of-type(5) {
+        top: 66%;
+        right: 0%;
+      }
+
+      img {
+        width: 30% !important;
+      }
+    }
+  }
+
+  .sponsor {
+    @include dgrid(1fr 1fr, center, start);
+    gap: 20px;
+
+    &-img {
+      width: 80%;
+    }
+  }
+
+  .footer-item a {
+    font-size: 20px;
+  }
+
+  .form {
+    .btn {
+      font-size: 20px;
+    }
+  }
+
+  .social-media .footer-item {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    width: 80%;
+  }
+
+  .title {
+    white-space: nowrap;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 160px;
+    font-size: 20px;
+  }
+
+  .res-menu-btn {
+    font-size: 2rem;
+  }
+
+  .res-menu-item {
+    padding: 10px;
+
+    a {
+      font-size: 25px;
+    }
+  }
+
+  .home {
+    &-item {
+      font-size: 180px;
+    }
+
+    &-img {
+      transform: translate(-50%, -70%);
+    }
+
+    .tooltip {
+      top: -9%;
+      right: -10%;
+    }
+  }
+
+  .about {
+    @include dgrid(1fr, center, center);
+
+    .content {
+      font-size: 1rem;
+    }
+  }
+
+  .favorites {
+    .row {
+      @include dgrid(1fr, center, center);
+    }
+  }
+
+  .models {
+    &-img {
+      width: 70%;
+    }
+
+    .tooltip {
+      &-info {
+        width: 80px;
+        white-space: wrap;
+        text-align: center;
+        font-size: 11px;
+      }
+
+      &:nth-of-type(2) {
+        top: 12%;
+        right: -17%;
+      }
+
+      &:nth-of-type(3) {
+        top: 27%;
+        left: 34%;
+      }
+
+      &:nth-of-type(4) {
+        top: 54%;
+        left: 23%;
+        z-index: 2;
+      }
+
+      &:nth-of-type(5) {
+        top: 54%;
+        right: -7%;
+      }
+    }
+  }
+
+  .sponsor {
+    @include dgrid(1fr, center, center);
+
+    &-img {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    .row {
+      @include dgrid(1fr, center, center);
+      gap: 50px;
+    }
+
+    .social-media {
+      .footer-item {
+        font-size: 25px;
+      }
+    }
+
+    .content {
+      font-size: 20px;
+    }
+  }
+}

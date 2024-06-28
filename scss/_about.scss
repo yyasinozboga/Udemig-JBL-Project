@@ -1,0 +1,19 @@
+.about {
+  margin-bottom: 70px;
+  @include dgrid(1fr 1fr, center, center);
+  gap: 20px;
+
+  &-left {
+    width: 100%;
+    @include dflex(center, start);
+    flex-direction: column;
+  }
+
+  &-content {
+    color: $pColor;
+  }
+
+  &-img {
+    width: 100%;
+  }
+}

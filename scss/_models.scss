@@ -1,0 +1,32 @@
+.models {
+  margin-bottom: 70px;
+  @include dflex(center, center);
+  flex-direction: column;
+  position: relative;
+
+  &-img {
+    width: 55%;
+  }
+
+  .tooltip {
+    &:nth-of-type(2) {
+      top: 8%;
+      right: 6%;
+    }
+
+    &:nth-of-type(3) {
+      top: 28%;
+      left: 41%;
+    }
+
+    &:nth-of-type(4) {
+      top: 65%;
+      left: 33%;
+    }
+
+    &:nth-of-type(5) {
+      top: 65%;
+      right: 19%;
+    }
+  }
+}

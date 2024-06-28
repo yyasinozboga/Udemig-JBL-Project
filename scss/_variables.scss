@@ -1,0 +1,24 @@
+$bgColor: #000000;
+$textColor: #ffffff;
+$mainColor: hsl(23, 100%, 50%);
+$pColor: #858585;
+$mainTransition: all 0.3s ease;
+$containerColor: hsl(23, 4%, 10%);
+$gradientColor: linear-gradient(
+  90deg,
+  hsl(23, 4%, 28%) 0%,
+  hsl(23, 4%, 8%) 100%
+);
+
+@mixin dflex($x, $y) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+}
+
+@mixin dgrid($column, $x, $y) {
+  display: grid;
+  grid-template-columns: $column;
+  justify-content: $x;
+  align-items: $y;
+}

@@ -1,0 +1,58 @@
+.footer {
+  margin-bottom: 30px;
+
+  .row {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    @include dgrid(repeat(3, 1fr), center, start);
+  }
+
+  &-item {
+    margin-bottom: 0px;
+
+    a {
+      color: $pColor;
+      transition: $mainTransition;
+      font-size: 15px;
+
+      &:hover {
+        color: $mainColor;
+      }
+    }
+  }
+
+  .form {
+    &-input {
+      width: 100%;
+      padding: 10px;
+      text-indent: 10px;
+      font-size: 15px;
+      background: $containerColor;
+      color: $textColor;
+    }
+
+    &-btn {
+      width: 100%;
+    }
+  }
+
+  .social-media {
+    @include dflex(center, center);
+    gap: 20px;
+  }
+
+  &-item {
+    color: $pColor;
+    font-size: 20px;
+    transition: $mainTransition;
+
+    &:hover {
+      color: $mainColor;
+    }
+  }
+
+  .content {
+    text-align: center;
+    color: $pColor;
+  }
+}

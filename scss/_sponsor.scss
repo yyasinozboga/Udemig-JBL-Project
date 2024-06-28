@@ -1,0 +1,12 @@
+.sponsor {
+  margin-bottom: 70px;
+  @include dgrid(repeat(4, 1fr), center, center);
+
+  &-img {
+    width: 70%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

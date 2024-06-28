@@ -1,0 +1,27 @@
+.favorites {
+  text-align: center;
+  margin-bottom: 70px;
+
+  .row {
+    @include dgrid(repeat(4, 1fr), center, center);
+    gap: 20px;
+
+    .col {
+      transition: $mainTransition;
+
+      &-img {
+        width: 100%;
+      }
+
+      &-content {
+        color: $pColor;
+      }
+
+      &:hover {
+        margin-top: 30px;
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+    }
+  }
+}
